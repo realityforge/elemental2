@@ -332,6 +332,14 @@ Window.prototype.devicePixelRatio;
  */
 Window.prototype.getSelection = function() {};
 
+/**
+ * Defined in ie_dom.js
+ *
+ * @type {!Element}
+ * @see http://msdn.microsoft.com/en-us/library/ms533065(VS.85).aspx
+ */
+Document.prototype.activeElement;
+
 // History API extension.
 // See http://w3c.github.io/html/browsers.html#the-history-interface.
 // This is partially defined in //javascript/externs/browser/ie_dom5.js
