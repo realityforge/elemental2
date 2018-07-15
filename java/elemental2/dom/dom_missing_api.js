@@ -186,6 +186,14 @@ HTMLInputElement.prototype.selectionStart;
 HTMLInputElement.prototype.selectionEnd;
 
 /**
+ * Declared in gecko_dom.js
+ *
+ * @type {!NodeList<!Element>}
+ * @see https://developer.mozilla.org/en/DOM/element.children
+ */
+Element.prototype.children;
+
+/**
  * Defined in gecko_dom.js.
  *
  * @return {Selection}
