@@ -314,6 +314,15 @@ Navigator.prototype.getBattery = function() {};
  */
 Window.prototype.devicePixelRatio;
 
+/**
+ * Defined in gecko_dom.js.
+ *
+ * @return {Selection}
+ * @see https://developer.mozilla.org/en/DOM/window.getSelection
+ * @nosideeffects
+ */
+Window.prototype.getSelection = function() {};
+
 // History API extension.
 // See http://w3c.github.io/html/browsers.html#the-history-interface.
 // This is partially defined in //javascript/externs/browser/ie_dom5.js
