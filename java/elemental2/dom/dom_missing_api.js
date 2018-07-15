@@ -178,6 +178,15 @@ Selection.prototype.setBaseAndExtent = function(
 Selection.prototype.setPosition = function(node, offset) {};
 // End of API definition for Selection type.
 
+/**
+ * Defined in gecko_dom.js.
+ *
+ * @return {Selection}
+ * @see https://developer.mozilla.org/en/DOM/window.getSelection
+ * @nosideeffects
+ */
+Window.prototype.getSelection = function() {};
+
 // Window API extension
 /**
  * @param {*} message
