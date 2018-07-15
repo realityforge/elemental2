@@ -142,7 +142,7 @@ Location.prototype.replace = function(url) {};
 
 
 // API definition for Selection type.
-// This type is defined in //javascript/externs/gecko_dom.js
+// This type is defined in //javascript/externs/gecko_dom.js as well as webkit_dom.js
 // but most of the method are supported by other browsers
 // should be moved to a new file //javascript/externs/w3c-selection.js
 /**
@@ -305,6 +305,14 @@ Selection.prototype.setPosition = function(node, offset) {};
  * @see http://www.w3.org/TR/battery-status/
  */
 Navigator.prototype.getBattery = function() {};
+
+/**
+ * Defined in webkit_dom.js.
+ *
+ * @type {number}
+ * @see http://developer.android.com/reference/android/webkit/WebView.html
+ */
+Window.prototype.devicePixelRatio;
 
 // History API extension.
 // See http://w3c.github.io/html/browsers.html#the-history-interface.
