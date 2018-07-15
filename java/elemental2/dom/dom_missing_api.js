@@ -178,6 +178,13 @@ Selection.prototype.setBaseAndExtent = function(
 Selection.prototype.setPosition = function(node, offset) {};
 // End of API definition for Selection type.
 
+// Members declared in gecko_dom.js
+/** @type {number} */
+HTMLInputElement.prototype.selectionStart;
+
+/** @type {number} */
+HTMLInputElement.prototype.selectionEnd;
+
 /**
  * Defined in gecko_dom.js.
  *
