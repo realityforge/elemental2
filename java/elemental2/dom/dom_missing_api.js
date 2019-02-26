@@ -142,7 +142,7 @@ Location.prototype.replace = function(url) {};
 
 
 // API definition for Selection type.
-// This type is defined in //javascript/externs/gecko_dom.js
+// This type is defined in //javascript/externs/gecko_dom.js as well as webkit_dom.js
 // but most of the method are supported by other browsers
 // should be moved to a new file //javascript/externs/w3c-selection.js
 /**
@@ -297,6 +297,38 @@ Selection.prototype.setBaseAndExtent = function(
 Selection.prototype.setPosition = function(node, offset) {};
 // End of API definition for Selection type.
 
+
+// Members declared in gecko_dom.js
+/** @type {number} */
+HTMLInputElement.prototype.selectionStart;
+
+/** @type {number} */
+HTMLInputElement.prototype.selectionEnd;
+
+/**
+ * Declared in ie_dom.js
+ *
+ * @type {string}
+ * @see http://msdn.microsoft.com/en-us/library/aa752326(VS.85).aspx
+ */
+Element.prototype.outerHTML;
+
+/**
+ * Declared in gecko_dom.js
+ *
+ * @type {!NodeList<!Element>}
+ * @see https://developer.mozilla.org/en/DOM/element.children
+ */
+Element.prototype.children;
+
+/**
+ * Declared in ie_dom.js
+ * @type {Element}
+ * @see http://msdn.microsoft.com/en-us/library/ms534327(VS.85).aspx
+ */
+Node.prototype.parentElement;
+
+
 // Access to the BatterystatusManager Object
 // This is defined in //javascript/externs/gecko_dom.js
 // should be moved to //javascript/externs/w3c_batterystatus.js
@@ -409,6 +441,32 @@ Console.prototype.clear = function() {};
 
 /** @type {!Console} */
 Window.prototype.console;
+
+/**
+ * Defined in webkit_dom.js.
+ *
+ * @type {number}
+ * @see http://developer.android.com/reference/android/webkit/WebView.html
+ */
+Window.prototype.devicePixelRatio;
+
+/**
+ * Defined in gecko_dom.js.
+ *
+ * @return {Selection}
+ * @see https://developer.mozilla.org/en/DOM/window.getSelection
+ * @nosideeffects
+ */
+Window.prototype.getSelection = function() {};
+
+
+/**
+ * Defined in ie_dom.js
+ *
+ * @type {!Element}
+ * @see http://msdn.microsoft.com/en-us/library/ms533065(VS.85).aspx
+ */
+Document.prototype.activeElement;
 
 /**
  * @type {!Console}
