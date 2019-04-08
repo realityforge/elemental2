@@ -142,7 +142,7 @@ Location.prototype.replace = function(url) {};
 
 
 // API definition for Selection type.
-// This type is defined in //javascript/externs/gecko_dom.js
+// This type is defined in //javascript/externs/gecko_dom.js as well as webkit_dom.js
 // but most of the method are supported by other browsers
 // should be moved to a new file //javascript/externs/w3c-selection.js
 /**
@@ -297,6 +297,30 @@ Selection.prototype.setBaseAndExtent = function(
 Selection.prototype.setPosition = function(node, offset) {};
 // End of API definition for Selection type.
 
+
+// Members declared in gecko_dom.js
+/** @type {number} */
+HTMLInputElement.prototype.selectionStart;
+
+/** @type {number} */
+HTMLInputElement.prototype.selectionEnd;
+
+/**
+ * Declared in ie_dom.js
+ *
+ * @type {string}
+ * @see http://msdn.microsoft.com/en-us/library/aa752326(VS.85).aspx
+ */
+Element.prototype.outerHTML;
+
+/**
+ * Declared in gecko_dom.js
+ *
+ * @type {!NodeList<!Element>}
+ * @see https://developer.mozilla.org/en/DOM/element.children
+ */
+Element.prototype.children;
+
 // Access to the BatterystatusManager Object
 // This is defined in //javascript/externs/gecko_dom.js
 // should be moved to //javascript/externs/w3c_batterystatus.js
@@ -306,116 +330,30 @@ Selection.prototype.setPosition = function(node, offset) {};
  */
 Navigator.prototype.getBattery = function() {};
 
-// Console API.
-// Defined in //javascript/externs/webkit_dom.js, the console api is now
-// supported by all major browsers.
 /**
- * @constructor
- * @see https://console.spec.whatwg.org/
+ * Defined in webkit_dom.js.
+ *
+ * @type {number}
+ * @see http://developer.android.com/reference/android/webkit/WebView.html
  */
-function Console() {}
-
-/**
- * If condition is false, perform Logger("error", data).
- * @param {*} condition
- * @param {...*} var_args
- * @return {undefined}
- */
-Console.prototype.assert = function(condition, var_args) {};
+Window.prototype.devicePixelRatio;
 
 /**
- * @param {...*} var_args
- * @return {undefined}
+ * Defined in gecko_dom.js.
+ *
+ * @return {Selection}
+ * @see https://developer.mozilla.org/en/DOM/window.getSelection
+ * @nosideeffects
  */
-Console.prototype.error = function(var_args) {};
+Window.prototype.getSelection = function() {};
 
 /**
- * @param {...*} var_args
- * @return {undefined}
+ * Defined in ie_dom.js
+ *
+ * @type {!Element}
+ * @see http://msdn.microsoft.com/en-us/library/ms533065(VS.85).aspx
  */
-Console.prototype.info = function(var_args) {};
-
-/**
- * @param {...*} var_args
- * @return {undefined}
- */
-Console.prototype.log = function(var_args) {};
-
-/**
- * @param {...*} var_args
- * @return {undefined}
- */
-Console.prototype.warn = function(var_args) {};
-
-/**
- * @param {...*} var_args
- * @return {undefined}
- */
-Console.prototype.debug = function(var_args) {};
-
-/**
- * @param {!Object} data
- * @param {*=} opt_columns
- * @return {undefined}
- */
-Console.prototype.table = function(data, opt_columns) {};
-
-/**
- * @param {...*} var_args
- * @return {undefined}
- */
-Console.prototype.trace = function(var_args) {};
-
-/**
- * @param {string=} label
- * @return {undefined}
- */
-Console.prototype.count = function(label) {};
-
-/**
- * @param {string} name
- * @return {undefined}
- */
-Console.prototype.time = function(name) {};
-
-/**
- * @param {string} name
- * @return {undefined}
- */
-Console.prototype.timeEnd = function(name) {};
-
-/**
- * @param {...*} var_args
- * @return {undefined}
- */
-Console.prototype.group = function(var_args) {};
-
-/**
- * @param {...*} var_args
- * @return {undefined}
- */
-Console.prototype.groupCollapsed = function(var_args) {};
-
-/**
- * @return {undefined}
- */
-Console.prototype.groupEnd = function() {};
-
-/**
- * @return {undefined}
- */
-Console.prototype.clear = function() {};
-
-
-/** @type {!Console} */
-Window.prototype.console;
-
-/**
- * @type {!Console}
- * @suppress {duplicate}
- */
-var console;
-// end of console API
+Document.prototype.activeElement;
 
 // History API extension.
 // See http://w3c.github.io/html/browsers.html#the-history-interface.
