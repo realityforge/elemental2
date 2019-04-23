@@ -60,6 +60,13 @@ elemental2.dom.Document.caretPositionFromPoint.y
 elemental2.dom.Document.createTouch.identifier
 elemental2.dom.Document.childElementCount
 elemental2.dom.DocumentFragment.childElementCount
+elemental2.dom.ApplicationCache.CHECKING
+elemental2.dom.ApplicationCache.DOWNLOADING
+elemental2.dom.ApplicationCache.IDLE
+elemental2.dom.ApplicationCache.OBSOLETE
+elemental2.dom.ApplicationCache.UNCACHED
+elemental2.dom.ApplicationCache.UPDATEREADY
+elemental2.dom.ApplicationCache.status
 elemental2.dom.DOMError.SEVERITY_ERROR
 elemental2.dom.DOMError.SEVERITY_FATAL_ERROR
 elemental2.dom.DOMError.SEVERITY_WARNING
@@ -112,6 +119,9 @@ elemental2.dom.ErrorEventInit.setColno.colno
 elemental2.dom.ErrorEventInit.getLineno
 elemental2.dom.ErrorEventInit.setLineno.lineno
 elemental2.dom.Event.eventPhase
+elemental2.dom.Event.AT_TARGET
+elemental2.dom.Event.BUBBLING_PHASE
+elemental2.dom.Event.CAPTURING_PHASE
 elemental2.dom.EventSource.readyState
 elemental2.dom.EventSource.CLOSED
 elemental2.dom.EventSource.CONNECTING
@@ -342,6 +352,7 @@ elemental2.dom.WritableStreamDefaultWriter.getDesiredSize
 elemental2.dom.WritableStreamDefaultWriter.setDesiredSize.desiredSize
 elemental2.dom.XMLHttpRequest.readyState
 elemental2.dom.XMLHttpRequest.status
+elemental2.dom.XMLHttpRequest.timeout
 elemental2.dom.XMLHttpRequest.DONE
 elemental2.dom.XMLHttpRequest.HEADERS_RECEIVED
 elemental2.dom.XMLHttpRequest.LOADING
