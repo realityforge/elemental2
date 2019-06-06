@@ -22,6 +22,14 @@
  * @externs
  */
 
+/**
+ * Declared in gecko_dom.js
+ *
+ * @type {!NodeList<!Element>}
+ * @see https://developer.mozilla.org/en/DOM/element.children
+ */
+Element.prototype.children;
+
 // Window API extension
 /**
  * @param {*} message
