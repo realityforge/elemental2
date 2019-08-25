@@ -1,0 +1,158 @@
+diff --git a/externs/browser/webgl2.js b/externs/browser/webgl2.js
+index f8181fc64..26107d200 100644
+--- a/externs/browser/webgl2.js
++++ b/externs/browser/webgl2.js
+@@ -1981,96 +1981,6 @@ WebGL2RenderingContext.prototype.uniform3ui = function(location, v0, v1, v2) {};
+ WebGL2RenderingContext.prototype.uniform4ui = function(
+     location, v0, v1, v2, v3) {};
+ 
+-
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {?Float32Array|?Array<number>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniform1fv = function(
+-    location, data, opt_srcOffset, opt_srcLength) {};
+-
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {?Float32Array|?Array<number>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniform2fv = function(
+-    location, data, opt_srcOffset, opt_srcLength) {};
+-
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {?Float32Array|?Array<number>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniform3fv = function(
+-    location, data, opt_srcOffset, opt_srcLength) {};
+-
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {?Float32Array|?Array<number>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniform4fv = function(
+-    location, data, opt_srcOffset, opt_srcLength) {};
+-
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {?Int32Array|?Array<number>|?Array<boolean>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniform1iv = function(
+-    location, data, opt_srcOffset, opt_srcLength) {};
+-
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {?Int32Array|?Array<number>|?Array<boolean>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniform2iv = function(
+-    location, data, opt_srcOffset, opt_srcLength) {};
+-
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {?Int32Array|?Array<number>|?Array<boolean>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniform3iv = function(
+-    location, data, opt_srcOffset, opt_srcLength) {};
+-
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {?Int32Array|?Array<number>|?Array<boolean>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniform4iv = function(
+-    location, data, opt_srcOffset, opt_srcLength) {};
+-
+-
+ /**
+  * @param {?WebGLUniformLocation} location
+  * @param {!Uint32Array|!Array<number>|!Array<boolean>} data
+@@ -2111,18 +2021,6 @@ WebGL2RenderingContext.prototype.uniform3uiv = function(
+ WebGL2RenderingContext.prototype.uniform4uiv = function(
+     location, data, opt_srcOffset, opt_srcLength) {};
+ 
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {boolean} transpose
+- * @param {?Float32Array|?Array<number>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniformMatrix2fv = function(
+-    location, transpose, data, opt_srcOffset, opt_srcLength) {};
+-
+ /**
+  * @param {?WebGLUniformLocation} location
+  * @param {boolean} transpose
+@@ -2156,18 +2054,6 @@ WebGL2RenderingContext.prototype.uniformMatrix4x2fv = function(
+ WebGL2RenderingContext.prototype.uniformMatrix2x3fv = function(
+     location, transpose, data, opt_srcOffset, opt_srcLength) {};
+ 
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {boolean} transpose
+- * @param {?Float32Array|?Array<number>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniformMatrix3fv = function(
+-    location, transpose, data, opt_srcOffset, opt_srcLength) {};
+-
+ /**
+  * @param {?WebGLUniformLocation} location
+  * @param {boolean} transpose
+@@ -2201,18 +2087,6 @@ WebGL2RenderingContext.prototype.uniformMatrix2x4fv = function(
+ WebGL2RenderingContext.prototype.uniformMatrix3x4fv = function(
+     location, transpose, data, opt_srcOffset, opt_srcLength) {};
+ 
+-/**
+- * @param {?WebGLUniformLocation} location
+- * @param {boolean} transpose
+- * @param {?Float32Array|?Array<number>} data
+- * @param {number=} opt_srcOffset
+- * @param {number=} opt_srcLength
+- * @return {undefined}
+- * @override
+- */
+-WebGL2RenderingContext.prototype.uniformMatrix4fv = function(
+-    location, transpose, data, opt_srcOffset, opt_srcLength) {};
+-
+ /* Vertex attribs */
+ 
+ /**
